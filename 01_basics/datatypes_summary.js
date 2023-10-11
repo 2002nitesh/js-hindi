@@ -5,7 +5,7 @@
 // 1. primitive
 // 2. non primitive
 
-// Primitive ( call by value data type )
+// Primitive ( call by value data type => create copy)
 // 7 types: String, Number, Boolean, null (means empty not 0), undefined, Symbol (for make unique use this datatype), BigInt
 
 const score = 100
@@ -44,5 +44,34 @@ console.log(typeof anotherId);
 
 // link for documentation
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// ************ memory **************
+// 1. Stack(use in primitive data type)  2. Heap ( in Non-primitive)
+
+
+// stack => create copy
+let myYoutubeName = "Niteshyt"
+
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+
+console.log(anotherName);
+console.log(myYoutubeName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+// heap => by reference
+
+let userTwo = userOne
+
+userTwo.email = "nitesh@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
 
 
