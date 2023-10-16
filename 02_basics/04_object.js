@@ -46,11 +46,44 @@ const users = [
 ]
 
 users[0].id
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+
+// de structuring
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "nitesh"
+}
+
+// course.courseInstructor
+
+// const {courseInstructor} = course
+// console.log(courseInstructor);
+
+const {courseInstructor: instructor} = course
+console.log(instructor);
+
+
+// api  => value comes in form of json 
+// json look like object
+
+// {
+//     "name": "nitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+// many time comes in array form
+[
+    {},
+    {},
+    {}
+]
 
